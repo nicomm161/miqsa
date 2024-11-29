@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function carruselFotos() {
     let boton_izquierda = document.getElementById('boton-carrusel-izquierda')
     let boton_derecha = document.getElementById('boton-carrusel-derecha')
-    const imagenes = ['../img/aire-acondicionado.jpg', '../img/fontanero.jpg', '../img/gasero.jpg', '../img/tecnico-agua.jpg', '../img/calderas.jpg', '../img/telecomunicacion.jpg', '../img/pci.jpg', '../img/electricista.jpg']
+    const imagenes = ['../img/aire-acondicionado.png', '../img/fontanero.png', '../img/gasero.png', '../img/tecnico-agua.png', '../img/calderas.png', '../img/telecomunicacion.png', '../img/pci.png', '../img/electricista.png']
     let posicionActual = 0;
 
-    boton_izquierda.addEventListener('mouseover', function retrocederFoto() {
+    boton_izquierda.addEventListener('click', function retrocederFoto() {
         if (posicionActual <= 0) {
             posicionActual = imagenes.length - 1;
         } else {
@@ -53,7 +53,7 @@ function carruselFotos() {
              
     })
 
-    boton_derecha.addEventListener('mouseover', function avanzarFoto() {
+    boton_derecha.addEventListener('click', function avanzarFoto() {
         if (posicionActual>=imagenes.length -1) {
             posicionActual = 0;
         } else {
