@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/f7f0c25511.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpg" href="img/miqsa-logo.jpg"/>
+    <title>Registro</title>
+</head>
+<body>
+        <!-- Cabecera de página -->
+        <header>
+            <a href="index.html"><img src="img/miqsa-logo.jpg" alt="miqsa-logo"></a>
+            <div id="navegacion-index">
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="registro.html"><i class="fa-solid fa-user"></i></a>
+                <a href="servicios.html"><i class="fa-solid fa-bolt"></i></a>
+                <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </header>
+        <!-- Formulario de registro -->
+        <form action="recoger-datos/datos-registro.php" method="post" id="formulario-registro">
+            <h2 id="titulo-registro-h2">¡Regístrate como cliente para MIQSA!</h2>
+            <fieldset class="formulario-registro-contenido">
+                <legend id="titulo-registro-legend">Rellena el formulario con tu información personal</legend><br>
+        
+                <label for="nombre">Nombre: <br>
+                <input type="text" name="nombre" id="nombre-registro" ></label><br>
+                <div class="error-message-registro" id="error-nombre-registro" hidden></div>
+        
+                <label for="email">Email: <br>
+                <input type="email" name="email" id="email-registro" ></label><br>
+                <div class="error-message-registro" id="error-email-registro" hidden></div>
+        
+                <label for="contraseña">Contraseña: <br>
+                <input type="password" name="contraseña" id="contrasena-registro" ></label><br>
+                <div class="error-message-registro" id="error-contrasena-registro" hidden></div>
+        
+                <label for="telefono">Teléfono: <br>
+                <input type="tel" name="telefono" id="telefono-registro"></label><br><br>
+                <div class="error-message-registro" id="error-telefono-registro" hidden></div>
+        
+                <input type="submit" value="Enviar" name="enviar" id="enviar-registro"> <br>
+                <p id="ya-tienes-sesion">¿Ya eres cliente? <a href="login.html">¡Inicia sesión!</a></p>
+                <div class="error-message-registro" id="todos-los-campos-vacios" hidden></div>
+            </fieldset>
+        </form>        
+        <!-- Pie de página -->
+        <footer>
+            <a href="index.html"><img src="img/miqsa-logo.jpg" alt="miqsa-logo"></a>
+            <div id="navegacion-footer">
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="registro.html"><i class="fa-solid fa-user"></i></a>
+                <a href="servicios.html"><i class="fa-solid fa-bolt"></i></a>
+                <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>    
+</body>
+</html>
+
+
+
+
+
