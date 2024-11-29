@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function carruselFotos() {
     let boton_izquierda = document.getElementById('boton-carrusel-izquierda')
     let boton_derecha = document.getElementById('boton-carrusel-derecha')
-    const imagenes = ['img/aire-acondicionado.jpg', 'img/fontanero.jpg', 'img/gasero.jpg', 'img/tecnico-agua.jpg', 'img/calderas.jpg', 'img/telecomunicacion.jpg', 'pci.jpg', 'img/electricista.jpg']
+    const imagenes = ['../img/aire-acondicionado.jpg', '../img/fontanero.jpg', '../img/gasero.jpg', '../img/tecnico-agua.jpg', '../img/calderas.jpg', '../img/telecomunicacion.jpg', '../img/pci.jpg', '../img/electricista.jpg']
     let posicionActual = 0;
 
     boton_izquierda.addEventListener('mouseover', function retrocederFoto() {

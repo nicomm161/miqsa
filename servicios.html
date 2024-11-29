@@ -9,17 +9,11 @@
     <title>Servicios</title>
 </head>
 <body>
-
         <!-- Cabecera de página -->
         <header>
             <a href="index.html"><img src="img/miqsa-logo.jpg" alt="miqsa-logo"></a>
-            <select name="navegacion-paginas" id="navegacion-paginas">
-                <option value="index.html">Inicio</option>
-                <option value="login.html">Login</option>
-                <option value="registro.html">Registro</option>
-                <option value="servicios.html">Servicios</option>
-            </select>
             <div id="navegacion-index">
+                <h2>Navegacion entre páginas</h2>
                 <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
                 <a href="registro.html"><i class="fa-solid fa-user"></i></a>
                 <a href="servicios.html"><i class="fa-solid fa-bolt"></i></a>
@@ -27,6 +21,7 @@
                 <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </header>
+        <hr>
         <!-- Formulario de servicios -->
         <form action="recoger-datos/datos-servicios.php" method="post" id="formulario-servicios">
             <h2 id="titulo-servicios-h2">¡Bienvenido a nuestros servicios!</h2>
@@ -65,18 +60,25 @@
         </form>        
 
     <!-- Pie de página -->
+        <hr>
         <footer>
             <a href="index.html"><img src="img/miqsa-logo.jpg" alt="miqsa-logo"></a>
-            <div id="navegacion-footer">
-                <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="registro.html"><i class="fa-solid fa-user"></i></a>
-                <a href="servicios.html"><i class="fa-solid fa-bolt"></i></a>
+            <div id="atencion-al-cliente">
+                <h2>Atención al cliente</h2>
                 <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a>
                 <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="servicios.html"><i class="fa-solid fa-bolt"></i></a>
+            </div>
+            <div id="politica-privacidad">
+                <h2>Politica y privacidad</h2>
+                <a href="privacidad.html"><i class="fa-solid fa-shield-halved"></i></a>
+                <a href="cookies.html"><i class="fa-solid fa-cookie"></i></a>
+            </div>
+            <div id="navegacion-footer">
+                <a href="login.html"><i class="fa-solid fa-house"></i></a>
             </div>
         </footer>
-    
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
