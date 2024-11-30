@@ -45,13 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             if ($conex->query($insertar_registro) === TRUE) {
                 $success_message = "¡Registro exitoso! Serás redirigido al inicio de sesión.";
-                $redirect_url = "../login.html";
+                $redirect_url = "../web-usuarios/login.html";
             }
         
         } catch (Exception $e) {
             if (mysqli_errno($conex) == 1062) {
                 $error_message = "¡Este correo ya existe! Por favor, intenta con otro.";
-                $redirect_url = "../registro.html";
+                $redirect_url = "../web-usuarios/registro.html";
             } else {
                 $error_message = "Error: " . htmlspecialchars($e->getMessage());
             }

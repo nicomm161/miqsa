@@ -40,11 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $url_login = "../index.html";
         } else {
             $error_message = "Contraseña incorrecta, vuelve a intentarlo";
-            $url_login = "../login.html";
+            $url_login = "../web-usuarios/login.html";
         }
     } else {
         $error_message = "No se encontró el correo, regístrate";
-        $url_login = "../registro.html";
+        $url_login = "../web-usuarios/registro.html";
     }
     
     $conex->close();

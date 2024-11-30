@@ -5,7 +5,7 @@ include("../conection-db/conectiondb.php");
 $errores_message = "";
 $atencion_message = "";
 $aciertos_message = "";
-$url = "../login.html";
+$url = "../web-usuarios/login.html";
 
 // Verificar si el usuario ha iniciado sesion
 session_start(); 
@@ -28,11 +28,11 @@ if (isset($_SESSION['email-login'])) {
         }
     } else {
         $errores_message = "No puedes solicitar servicios si no eres cliente, regístrate o inicia sesión.";
-        $url = "../registro.html";
+        $url = "../web-usuarios/registro.html";
     }
 } else {
     $errores_message = "Por favor, inicia sesión primero.";
-    $url = "../login.html";
+    $url = "../web-usuarios/login.html";
 }
 
 // Cerrar la conexión

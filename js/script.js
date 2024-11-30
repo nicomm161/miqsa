@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     validarFormularioLogin();
     validarFormularioServicios();
     carruselFotos();
+    carruselTrabajo();
 });
 
 
@@ -33,7 +34,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+function carruselTrabajo() {
+    let boton_izquierda = document.getElementById('boton-trabajo-izquierda')
+    let boton_derecha = document.getElementById('boton-trabajo-derecha')
+    const imagenes = ['../img/casa.png', '../img/bar.png', '../img/centro-comercial.png', '../img/hotel.png', '../img/restaurante.png', '../img/empresa.png']
+    let posicionActual = 0;
 
+    boton_izquierda.addEventListener('click', function retrocederFoto() {
+        if (posicionActual <= 0) {
+            posicionActual = imagenes.length - 1;
+        } else {
+            posicionActual--;
+        }
+        actualizarImagen()
+        comprobarPosicion()
+             
+    })
+
+    boton_derecha.addEventListener('click', function avanzarFoto() {
+        if (posicionActual>=imagenes.length -1) {
+            posicionActual = 0;
+        } else {
+            posicionActual++;
+        }
+        actualizarImagen()
+        comprobarPosicion()
+    })
+
+    function actualizarImagen() {
+        const imagenActual = imagenes[posicionActual];
+        const imagen = document.getElementById('imagen-trabajo');
+        imagen.src = imagenActual;
+    }
+
+    function comprobarPosicion() {
+        if (posicionActual === 0) {
+            boton_izquierda.disabled = true;
+            boton_derecha.disabled = false;
+        } else if (posicionActual === imagenes.length - 1) {
+            boton_izquierda.disabled = false;
+            boton_derecha.disabled = true;
+        } else {
+            boton_izquierda.disabled = false;
+            boton_derecha.disabled = false;
+        }
+    }
+    comprobarPosicion()
+}
 
 
 function carruselFotos() {
