@@ -4,36 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     validarFormularioRegistro();
     validarFormularioLogin();
     validarFormularioServicios();
+    validarFormularioCandidatura()
     carruselFotos();
     carruselTrabajo();
+    
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Carrusel de fotos trabajo
 function carruselTrabajo() {
     let boton_izquierda = document.getElementById('boton-trabajo-izquierda')
     let boton_derecha = document.getElementById('boton-trabajo-derecha')
@@ -82,7 +60,7 @@ function carruselTrabajo() {
     comprobarPosicion()
 }
 
-
+// Carrusel de fotos
 function carruselFotos() {
     let boton_izquierda = document.getElementById('boton-carrusel-izquierda')
     let boton_derecha = document.getElementById('boton-carrusel-derecha')
@@ -328,4 +306,142 @@ function validarFormularioServicios() {
             }
         });
     }
+}
+
+function validarFormularioCandidatura() {
+    const formCandidatura = document.getElementById('formulario-candidatura');
+    if (formCandidatura) {
+        formCandidatura.addEventListener('submit', function (event) {
+
+            event.preventDefault();
+
+            let nombreEntrada = document.getElementById('nombre-candidatura');
+            let errorNombre = document.getElementById('error-nombre-candidatura');
+            //Validar Nombre si esta vacio
+            if (nombreEntrada.value.trim() === '') {
+                errorNombre.textContent = '¡El nombre es obligatorio de rellenar!';
+                errorNombre.classList.add('error-message-registro');
+                errorNombre.hidden = false; 
+            }else{
+                errorNombre.textContent = '';
+                errorNombre.classList.remove('error-message-registro');
+                errorNombre.hidden = true;
+            }
+
+            let emailEntrada = document.getElementById('email-candidatura');
+            let errorEmail = document.getElementById('error-email-candidatura');
+            const emailPatron = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            //Validar Email si no cumple el patron
+            if (!emailPatron.test(emailEntrada.value.trim())) {
+                errorEmail.textContent = '¡El email no sigue el patrón X@X.XX!';
+                errorEmail.classList.add('error-message-registro');
+                errorEmail.hidden = false;
+            } else {
+                errorEmail.textContent = '';
+                errorEmail.classList.remove('error-message-registro');
+                errorEmail.hidden = true;
+            }
+
+            //Validar email si esta vacio
+            if (emailEntrada.value.trim() === '') {
+                errorEmail.textContent = '¡El email es obligatorio de rellenar!';
+                errorEmail.classList.add('error-message-registro');
+                errorEmail.hidden = false;
+            }else{
+                errorEmail.textContent = '';
+                errorEmail.classList.remove('error-message-registro');
+                errorEmail.hidden = true;
+            }
+
+            let telefonoEntrada = document.getElementById('telefono-candidatura');
+            let errorTelefono = document.getElementById('error-telefono-candidatura');
+            const telefonoPatron = /^\d{3}-\d{3}-\d{3}$/;
+            //Validar Telefono si no cumple el patron
+            if (!telefonoPatron.test(telefonoEntrada.value.trim())) {
+                errorTelefono.textContent = '¡El telefono no sigue el patrón XXX-XXX-XXX!';
+                errorTelefono.classList.add('error-message-registro');
+                errorTelefono.hidden = false;
+            }else{
+                errorTelefono.textContent = '';
+                errorTelefono.classList.remove('error-message-registro');
+                errorTelefono.hidden = true;
+            }
+
+            //Validar telefono si esta vacio
+            if (telefonoEntrada.value.trim() === '') {
+                errorTelefono.textContent = '¡El telefono es obligatorio de rellenar!';
+                errorTelefono.classList.add('error-message-registro');
+                errorTelefono.hidden = false;
+            }else{
+                errorTelefono.textContent = '';
+                errorTelefono.classList.remove('error-message-registro');
+                errorTelefono.hidden = true;
+            }
+
+            let experienciaEntrada = document.getElementById('experiencia-candidatura');
+            let errorExperiencia = document.getElementById('error-experiencia-candidatura');
+            //Validar Experiencia si esta vacio
+            if (experienciaEntrada.value.trim() === '') {
+                errorExperiencia.textContent = '¡La experiencia es obligatoria de rellenar!';
+                errorExperiencia.classList.add('error-message-registro');
+                errorExperiencia.hidden = false;
+            }else{
+                errorExperiencia.textContent = '';
+                errorExperiencia.classList.remove('error-message-registro');
+                errorExperiencia.hidden = true;
+            }
+            let disponibilidadEntrada = document.getElementById('disponibilidad-candidatura');
+            let errorDisponibilidad = document.getElementById('error-disponibilidad-candidatura');
+            //Validar Disponibilidad si esta vacio
+            if (disponibilidadEntrada.value.trim() === '') {
+                errorDisponibilidad.textContent = '¡La disponibilidad es obligatoria de rellenar!';
+                errorDisponibilidad.classList.add('error-message-registro');
+                errorDisponibilidad.hidden = false;
+            }else{
+                errorDisponibilidad.textContent = '';
+                errorDisponibilidad.classList.remove('error-message-registro');
+                errorDisponibilidad.hidden = true;
+            }
+
+            let curriculumEntrada = document.getElementById('curriculum-candidatura');
+            let errorCurriculum = document.getElementById('error-curriculum-candidatura');
+            let patronCurriculum = /\.pdf$/i;
+
+            // Asegúrate de que haya un archivo seleccionado antes de validarlo
+            if (curriculumEntrada.files.length > 0) {
+                let archivoNombre = curriculumEntrada.files[0].name;
+            if (!patronCurriculum.test(archivoNombre)) {
+                errorCurriculum.textContent = '¡El curriculum no sigue el patrón .pdf!';
+                errorCurriculum.classList.add('error-message-registro');
+                errorCurriculum.hidden = false;
+            } else {
+                    errorCurriculum.textContent = '';
+                    errorCurriculum.classList.remove('error-message-registro');
+                    errorCurriculum.hidden = true;
+            }
+            } else {
+                    errorCurriculum.textContent = '¡Por favor, selecciona un archivo!';
+                    errorCurriculum.classList.add('error-message-registro');
+                    errorCurriculum.hidden = false;
+            }   
+
+            //Validar Curriculum si esta vacio
+            if (curriculumEntrada.value.trim() === '') {
+                errorCurriculum.textContent = '¡El curriculum es obligatorio de rellenar!';
+                errorCurriculum.classList.add('error-message-registro');
+                errorCurriculum.hidden = false;
+            }else{
+                errorCurriculum.textContent = '';
+                errorCurriculum.classList.remove('error-message-registro');
+                errorCurriculum.hidden = true;
+            }
+            
+            // Enviar el formulario si no hay errores
+            if (errorNombre.hidden && errorEmail.hidden && errorTelefono.hidden && errorExperiencia.hidden && errorDisponibilidad.hidden && errorCurriculum.hidden) {
+                document.getElementById('formulario-candidatura').submit();
+                document.getElementById('formulario-candidatura').reset();
+            }
+        });
+    }
+    
 }

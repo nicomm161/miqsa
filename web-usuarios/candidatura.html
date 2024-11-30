@@ -33,54 +33,44 @@
         <fieldset class="formulario-candidatura-contenido">
             <legend id="titulo-candidatura-legend">Completa el formulario con tu información</legend><br>
         
-            <!-- Nombre completo -->
             <label for="nombre">Nombre completo: <br>
-            <input type="text" name="nombre" id="nombre-candidatura" required>
+            <input type="text" name="nombre" id="nombre-candidatura" >
             </label><br>
             <div class="error-message-candidatura" id="error-nombre-candidatura" hidden></div>
         
-            <!-- Correo electrónico -->
             <label for="email">Correo electrónico: <br>
-            <input type="email" name="email" id="email-candidatura" required>
+            <input type="email" name="email" id="email-candidatura" >
             </label><br>
             <div class="error-message-candidatura" id="error-email-candidatura" hidden></div>
         
-            <!-- Teléfono -->
             <label for="telefono">Teléfono: <br>
-            <input type="tel" name="telefono" id="telefono-candidatura" required>
+            <input type="tel" name="telefono" id="telefono-candidatura" >
             </label><br>
             <div class="error-message-candidatura" id="error-telefono-candidatura" hidden></div>
         
-            <!-- Experiencia previa -->
             <label for="experiencia">Experiencia previa (años): <br>
-            <input type="number" name="experiencia" id="experiencia-candidatura" min="0" required>
+            <input type="number" name="experiencia" id="experiencia-candidatura" >
             </label><br>
             <div class="error-message-candidatura" id="error-experiencia-candidatura" hidden></div>
         
-            <!-- Formación académica -->
             <label for="formacion">Formación académica: <br>
-                <select name="formacion" id="formacion-candidatura" required>
-                    <option value="">Selecciona una opción</option>
+                <select name="formacion" id="formacion-candidatura" >
                     <option value="sin-titulo">Sin título</option>
                     <option value="tecnico">Técnico</option>
                     <option value="universitario">Universitario</option>
                 </select>
             </label><br>
-            <div class="error-message-candidatura" id="error-formacion-candidatura" hidden></div>
         
-            <!-- Disponibilidad -->
             <label for="disponibilidad">Disponibilidad: <br>
-                <textarea name="disponibilidad" id="disponibilidad-candidatura" rows="4" required></textarea>
+                <textarea name="disponibilidad" id="disponibilidad-candidatura" rows="4" ></textarea>
             </label><br>
             <div class="error-message-candidatura" id="error-disponibilidad-candidatura" hidden></div>
         
-            <!-- Curriculum adjunto -->
-            <label for="curriculum">Adjunta tu currículum (PDF): <br>
-                <input type="file" name="curriculum" id="curriculum-candidatura" accept=".pdf" required>
+            <label for="curriculum">Adjunta tu currículum: <br>
+                <input type="file" name="curriculum" id="curriculum-candidatura">
             </label><br><br>
             <div class="error-message-candidatura" id="error-curriculum-candidatura" hidden></div>
         
-            <!-- Botón de enviar -->
             <input type="submit" value="Enviar candidatura" name="enviar" id="enviar-candidatura"> <br>
         </fieldset>
     </form>
