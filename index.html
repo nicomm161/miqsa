@@ -12,6 +12,7 @@
 <body>
         <!-- Cabecera -->
         <header>
+            <a href="index.html"><img src="img/miqsa-logo.png"></a>
             <a href="index.html"><h2>Miqsa</h2></a>
             <div id="navegacion-index">
                 <h2>Navegacion entre páginas</h2>
@@ -46,6 +47,7 @@
                     <h2>¡Nuestros servicios!</h2>
                     <h3>Ofrecemos una amplia variedad de servicios</h3>
                     <p>¡Tenemos todo lo qué necesitas! Ofrecemos servicios de electricidad, fontaneria, mantenimiento y reparaciones</p>
+                    <p>Puedes acceder a nuestros servicios haciendote <a href="registro.html">cliente </a>de Miqsa y solicitar nuestros <a href="servicios.html">servicios</a></p>
                 </article>
                 <button type="button" id="boton-carrusel-izquierda"><i class="fa-solid fa-arrow-left"></i></button>
                 <img src="img/aire-acondicionado.png" id="imagen-carrusel">
@@ -58,8 +60,10 @@
                 <p>Trabajamos con una amplia variedad de clientes, desde empresas de distintos sectores hasta particulares</p>
                 <p>Hemos estado presente en muchas obras en la zona de Barcelona centro, hoteles, centros comerciales, restaurantes, bares etc...</p>
                 <p>Somos de la zona de Barcelona, si necesita un servicio de calidad no dude en contactarnos via <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a> o <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a></p>
-                <div id="imagen-trabajado">
-                    <img src="img/casa.png" alt="">
+                <div id="carrusel-trabajo">
+                    <button id="boton-trabajo-izquierda"><i class="fa-solid fa-arrow-left"></i></button>
+                    <img src="img/casa.png" id="imagen-trabajo">
+                    <button id="boton-trabajo-derecha"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </article>
             <main id="trabajar-con-nosotros">
@@ -71,36 +75,75 @@
         <!-- Opiniones de clientes -->
             <article id="opiniones">
                 <div id="opinion1">
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <hr>
 
                 </div>
                 <div id="opinion2">
-                    
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <hr>
                 </div>
                 <div id="opinion3">
-                    
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <hr>
                 </div>
                 <div id="opinion4">
-                    
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
                 </div>
                 <div id="opinion5">
-                    
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <hr>
                 </div>
                 <div id="opinion6">
-                    
+                    <div id="estrellas">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <hr>
                 </div>
             </article>
         <!-- Localizacion empresa -->
             <article id="localizacion-empresa">
                 <h2 id="titulo-localizacion-h2">¡Visita nuestra oficina!</h2>
-                <p>Estamos ubicados en Carrer del Xaloc, 3, 08917 Badalona, Barcelona</p>
-                <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5980.396868906575!2d2.2367413765455657!3d41.4566112916977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb74315344d3%3A0x38defe1ab6614808!2sCarrer%20del%20Xaloc%2C%203%2C%2008917%20Badalona%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1731324316980!5m2!1ses!2ses"id="localizacion-oficina"></iframe>
+                <p>Estamos ubicados en Carrer del Xaloc, 3, 08917 Badalona, Barcelona <i class="fa-solid fa-location-dot"></i></p>
             </article>
         </div>
-        
+        <div id="derechosautor">
+            <p>Desarrollado por © Nico Mesa. Puedes seguirme en mi redes sociales <a href="https://github.com/nicomm161"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/nico-mesa-munoz/"><i class="fa-brands fa-linkedin-in"></i></a></p>
+        </div>
        <!-- Pie de página -->
        <hr>
        <footer>
+           <a href="index.html"><img src="img/miqsa-logo.png"></a>
            <a href="index.html"><h2>Miqsa</h2></a>
            <div id="atencion-al-cliente">
                <h2>Atención al cliente</h2>
@@ -112,6 +155,7 @@
                <h2>Politica y privacidad</h2>
                <a href="privacidad.html"><i class="fa-solid fa-shield-halved"></i></a>
                <a href="cookies.html"><i class="fa-solid fa-cookie"></i></a>
+               <p>© 2025 Miqsa. Todos los derechos reservados</p>
            </div>
            <div id="navegacion-footer">
                <a href="login.html"><i class="fa-solid fa-house"></i></a>

@@ -1,1 +1,12 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background-color: #7DF9FF; */
+    /* background-color: #FFD700; */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    
+}
