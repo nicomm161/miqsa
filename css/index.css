@@ -4,9 +4,166 @@
     box-sizing: border-box;
 }
 /* background-color: #7DF9FF; */
-    /* background-color: #FFD700; */
+    
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
 }
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+}
+
+header img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(94, 13, 201, 0.849);
+}
+
+header h2{
+    font-size: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #800080;
+    font-size: 20px;
+}
+
+header #navegacion-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+header #navegacion-index #navegacion-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+header #atencion-al-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+header #atencion-al-cliente #atencion-al-cliente-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenido-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+}
+
+footer img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(94, 13, 201, 0.849);
+}
+
+footer h2{
+    font-size: 20px;
+    color: #8A2BE2;
+}
+
+footer a{
+    text-decoration: none;
+    color: #800080;
+    font-size: 20px;
+}
+
+footer p{
+    font-size: px;
+    color: black;
+}
+
+footer #atencion-al-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #atencion-al-cliente #atencion-al-cliente-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #politica-privacidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #politica-privacidad #policita-privacidad-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
