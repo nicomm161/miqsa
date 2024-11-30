@@ -38,34 +38,42 @@
         <div class="contenido-index">
              <!-- Pie de cabecera -->
             <nav class="pie-de-cabecera">
-                <h2>¡Somos Miqsa!</h2>
-                <h3>Somos una empresa dedicada a la prestación de servicios de electricidad</h3>
-                <p>¡Estamos aquí para ayudarte! Tenemos un servicio al cliente exquisito a medida de tu necesidad</p>
-                <p>Rápidos - Precios - Calidad - Seguridad</p>
-                <p>Cuentas con técnicos con más de 20 años de experiencia, es tu oportunidad de ser parte de nuestra familia</p>
+                <div id="contenido-pie-de-cabecera">
+                    <h2>¡Somos Miqsa!</h2>
+                    <h3>Somos una empresa dedicada a la prestación de servicios de electricidad</h3>
+                    <p>¡Estamos aquí para ayudarte! Tenemos un servicio al cliente exquisito a medida de tu necesidad.</p>
+                    <p>Rápidos - Precios - Calidad - Seguridad.</p>
+                    <p>Cuentas con técnicos con más de 20 años de experiencia, es tu oportunidad de ser parte de nuestra familia.</p>
+                </div>
                 <div id="imagen-pie-cabecera">
                     <img src="img/imagen-pie-cabecera.png">
                 </div>
             </nav>
         <!-- Carrusel de servicios -->
             <main id="carrusel-servicios">
-                <article>
+                <article id="contenido-carrusel">
                     <h2>¡Nuestros servicios!</h2>
                     <h3>Ofrecemos una amplia variedad de servicios</h3>
-                    <p>¡Tenemos todo lo qué necesitas! Ofrecemos servicios de electricidad, fontaneria, mantenimiento y reparaciones</p>
-                    <p>Puedes acceder a nuestros servicios haciendote <a href="web-usuarios/registro.html">cliente </a>de Miqsa y solicitar nuestros <a href="web-usuarios/servicios.html">servicios</a></p>
+                    <p>¡Tenemos todo lo qué necesitas! Ofrecemos servicios de electricidad, fontaneria, mantenimiento y reparaciones.</p>
+                    <p>Puedes acceder a nuestros servicios haciendote <a href="web-usuarios/registro.html">cliente</a> de Miqsa y solicitar nuestros <a href="web-usuarios/servicios.html">servicios.</a></p>
                 </article>
-                <button type="button" id="boton-carrusel-izquierda"><i class="fa-solid fa-arrow-left"></i></button>
-                <img src="img/aire-acondicionado.png" id="imagen-carrusel">
-                <button type="button" id="boton-carrusel-derecha"><i class="fa-solid fa-arrow-right"></i></button>     
+                <div id="carrusel-servicios-fotos">
+                    <button type="button" id="boton-carrusel-izquierda"><i class="fa-solid fa-arrow-left"></i></button>
+                    <img src="img/aire-acondicionado.png" id="imagen-carrusel">
+                    <button type="button" id="boton-carrusel-derecha"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                     
             </main>
             <!-- Con quién hemos trabajado -->
             <article id="con-quien-hemos-trabajado">
-                <h2>Para que nos conozcas un poco más ...</h2>
-                <h3>¿Con qué clientes trabajamos?</h3>
-                <p>Trabajamos con una amplia variedad de clientes, desde empresas de distintos sectores hasta particulares</p>
-                <p>Hemos estado presente en muchas obras en la zona de Barcelona centro, hoteles, centros comerciales, restaurantes, bares etc...</p>
-                <p>Somos de la zona de Barcelona, si necesita un servicio de calidad no dude en contactarnos via <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a> o <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a></p>
+                <div id="contenido-con-quien-hemos-trabajado">
+                    <h2>Para que nos conozcas un poco más ...</h2>
+                    <h3>¿Con qué clientes trabajamos?</h3>
+                    <p>Trabajamos con una amplia variedad de clientes, desde empresas de distintos sectores hasta particulares</p>
+                    <p>Hemos estado presente en muchas obras en la zona de Barcelona centro, hoteles, centros comerciales, restaurantes, bares etc...</p>
+                    <p>Somos de la zona de Barcelona, si necesita un servicio de calidad no dude en contactarnos via <a href="mailto:miqsa@miqsa.com"><i class="fa-solid fa-envelope"></i></a> o <a href="tel:+34930078747"><i class="fa-solid fa-phone"></i></a></p>
+                </div>
+                
                 <div id="carrusel-trabajo">
                     <button id="boton-trabajo-izquierda"><i class="fa-solid fa-arrow-left"></i></button>
                     <img src="img/casa.png" id="imagen-trabajo">
@@ -81,15 +89,20 @@
             </main>
         <!-- Opiniones de clientes -->
             <article id="opiniones">
+
                 <div id="opinion1">
                     <div id="estrellas">
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
 
-                    <p>Excelente servicio y atención al cliente. Llamé por un problema eléctrico urgente y llegaron rápidamente. El técnico fue muy profesional, explicó todo el proceso y solucionó el problema en poco tiempo. ¡Muy recomendados! – José Martínez</p>
+                    <p>He contratado sus servicios de fontanería varias veces, y siempre cumplen.<br> 
+                        Trabajan con materiales de calidad, dejan todo impecable y los precios <br> 
+                        son razonables. Sin duda, volveré a llamarlos. <br> 
+                        Laura Gómez</p>
 
                 </div>
                 <div id="opinion2">
@@ -98,10 +111,13 @@
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
 
-                    <p>He contratado sus servicios de fontanería varias veces, y siempre cumplen. Trabajan con materiales de calidad, dejan todo impecable y los precios son razonables. Sin duda, volveré a llamarlos. – Laura Gómez</p>
+                    <p>El mantenimiento eléctrico anual de mi oficina lo hago con ellos, <br>
+                        y estoy súper satisfecha. Siempre revisan todo minuciosamente <br>
+                        y me dan buenos consejos para ahorrar energía. <br>
+                        ¡Un servicio excelente! <br> 
+                        Marta Rodríguez</p>
 
                 </div>
                 <div id="opinion3">
@@ -110,49 +126,22 @@
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
 
-                    <p>Tuve que hacer una instalación completa en mi casa y quedé encantado con el resultado. Son muy detallistas, puntuales y saben lo que hacen. Una empresa en la que se puede confiar al 100%. – Carlos Fernández</p>
-
-                </div>
-                <div id="opinion4">
-                    <div id="estrellas">
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-
-                    <p>El mantenimiento eléctrico anual de mi oficina lo hago con ellos, y estoy súper satisfecho. Siempre revisan todo minuciosamente y me dan buenos consejos para ahorrar energía. ¡Un servicio excelente! – Marta Rodríguez</p>
-
-                </div>
-                <div id="opinion5">
-                    <div id="estrellas">
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-
-                    <p>¡Un equipo de 10! Tenía una fuga en casa y vinieron enseguida. No solo la arreglaron, sino que además detectaron otros detalles que podrían haber causado problemas a futuro. Muy agradecida por su profesionalismo. – Ana López</p>
-
-                </div>
-                <div id="opinion6">
-                    <div id="estrellas">
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-
-                    <p>Impresionante la rapidez y eficiencia con la que trabajan. Me instalaron un sistema de iluminación inteligente en toda la casa y quedó perfecto. Además, son muy amables y resuelven todas las dudas. – Javier Sánchez</p>
+                    <p>¡Un equipo de 10! Tenía una fuga en casa y vinieron enseguida. <br>
+                        No solo la arreglaron, sino que además detectaron otros <br>
+                        detalles que podrían haber causado problemas a futuro. <br>
+                        Muy agradecida por su profesionalismo. <br> 
+                        Ana López</p>
                 </div>
             </article>
         <!-- Localizacion empresa -->
             <article id="localizacion-empresa">
-                <h2 id="titulo-localizacion-h2">¡Visita nuestra oficina!</h2>
-                <p>Estamos ubicados en Carrer del Xaloc, 3, 08917 Badalona, Barcelona <i class="fa-solid fa-location-dot"></i></p>
+                <div id="contenido-localizacion-empresa">
+                    <h2 id="titulo-localizacion-h2">¡Visita nuestra oficina!</h2>
+                    <p>Estamos ubicados en Carrer del Xaloc, 3, 08917 Badalona, Barcelona <i class="fa-solid fa-location-dot"></i></p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.1828425881017!2d2.237398776545585!3d41.456949491676724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb744717fe41%3A0xd1aa0121e11adc2!2sCarrer%20del%20Xaloc!5e0!3m2!1sca!2ses!4v1732999628750!5m2!1sca!2ses"></iframe>
             </article>
         </div>
         
