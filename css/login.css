@@ -79,10 +79,128 @@ header #atencion-al-cliente #atencion-al-cliente-i{
 }
 
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    height: 80vh;
+    font-weight: bold;
+}
+
+form h2{
+    font-size: 20px;
+    color: #8A2BE2; 
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+    border: #800080 2px solid;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+    height: 60vh;
+    padding: 10px;
+    border-radius: 20px;
+    border: #800080 2px solid;
+    background-color: whitesmoke;
+    color: #800080;
+}
+
+form legend{
+    font-size: 20px;
+    color: #8A2BE2;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+    border: #800080 2px solid;
+    background-color: whitesmoke;
+    border-radius: 20px ;
+}
+
+form label{
+    font-size: 16px;
+    color: #8A2BE2;
+}
+
+form input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: #800080 2px solid;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    padding: 20px;
+    bottom: 0;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+}
+
+footer img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
+}
+
+footer h2{
+    font-size: 20px;
+    color: #8A2BE2;
+}
+
+footer a{
+    text-decoration: none;
+    color: #800080;
+    font-size: 20px;
+}
 
 
+footer #atencion-al-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
 
+footer #atencion-al-cliente #atencion-al-cliente-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
 
+footer #politica-privacidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #politica-privacidad #policita-privacidad-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
 
 
 
