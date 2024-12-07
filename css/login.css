@@ -107,7 +107,7 @@ form fieldset{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
-    height: 60vh;
+    height: 55vh;
     padding: 10px;
     border-radius: 20px;
     border: #800080 2px solid;
@@ -125,15 +125,11 @@ form legend{
     border-radius: 20px ;
 }
 
-form label{
-    font-size: 16px;
-    color: #8A2BE2;
-}
 
 form input{
     margin: 5px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: #800080 2px solid;
     background-color: whitesmoke;
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);

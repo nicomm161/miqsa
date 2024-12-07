@@ -37,25 +37,21 @@
         <form action="../recoger-datos/datos-registro.php" method="post" id="formulario-registro">
             <h2 id="titulo-registro-h2">¡Regístrate como cliente para MIQSA!</h2>
             <fieldset class="formulario-registro-contenido">
-                <legend id="titulo-registro-legend">Rellena el formulario con tu información personal</legend><br>
+                <legend id="titulo-registro-legend">Rellena el formulario con tu información personal</legend>
         
-                <label for="nombre">Nombre: <br>
-                <input type="text" name="nombre" id="nombre-registro" ></label><br>
+                <input type="text" name="nombre" id="nombre-registro" placeholder="Nombre"></label><br>
                 <div class="error-message-registro" id="error-nombre-registro" hidden></div>
         
-                <label for="email">Email: <br>
-                <input type="email" name="email" id="email-registro" ></label><br>
+                <input type="email" name="email" id="email-registro" placeholder="Email"></label><br>
                 <div class="error-message-registro" id="error-email-registro" hidden></div>
         
-                <label for="contraseña">Contraseña: <br>
-                <input type="password" name="contraseña" id="contrasena-registro" ></label><br>
+                <input type="password" name="contraseña" id="contrasena-registro" placeholder="Contraseña"></label><br>
                 <div class="error-message-registro" id="error-contrasena-registro" hidden></div>
         
-                <label for="telefono">Teléfono: <br>
-                <input type="tel" name="telefono" id="telefono-registro"></label><br><br>
+                <input type="tel" name="telefono" id="telefono-registro" placeholder="Télefono"></label><br>
                 <div class="error-message-registro" id="error-telefono-registro" hidden></div>
         
-                <input type="submit" value="Enviar" name="enviar" id="enviar-registro"> <br>
+                <input type="submit" value="Enviar" name="enviar" id="enviar-registro">
                 <p id="ya-tienes-sesion">¿Ya eres cliente? <a href="login.html">¡Inicia sesión!</a></p>
                 <div class="error-message-registro" id="todos-los-campos-vacios" hidden></div>
             </fieldset>
