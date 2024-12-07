@@ -219,6 +219,18 @@ function validarFormularioRegistro() {
                 todosLosCamposVacios.textContent = '¡Todos los campos son obligatorios de rellenar!';
                 todosLosCamposVacios.classList.add('error-message-registro');
                 todosLosCamposVacios.hidden = false;
+                errorNombre.textContent = '';
+                errorNombre.classList.remove('error-message-registro');
+                errorNombre.hidden = true;
+                errorEmail.textContent = '';
+                errorEmail.classList.remove('error-message-registro');
+                errorEmail.hidden = true;
+                errorContrasena.textContent = '';
+                errorContrasena.classList.remove('error-message-registro');
+                errorContrasena.hidden = true;
+                errorTelefono.textContent = '';
+                errorTelefono.classList.remove('error-message-registro');
+                errorTelefono.hidden = true;
             } else {
                 todosLosCamposVacios.textContent = '';
                 todosLosCamposVacios.classList.remove('error-message-registro');
