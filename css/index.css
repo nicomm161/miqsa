@@ -35,14 +35,26 @@ header img{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
 
+header img:hover{
+    box-shadow: 0 0 10px 0 rgba(54, 18, 199, 0.849);
+    transition: 0.3s ease-in-out;
+}
+
 header h2{
     font-size: 20px;
+    color: #800080;
 }
+
 
 header a{
     text-decoration: none;
-    color: #800080;
+    color: navy;
     font-size: 20px;
+}
+
+header a:hover{
+    color: #11acd3;
+    transition: 0.3s ease-in-out;
 }
 
 header #navegacion-index{
@@ -173,8 +185,14 @@ header #atencion-al-cliente #atencion-al-cliente-i{
 
 .contenido-index #carrusel-servicios #contenido-carrusel a{
     text-decoration: none;
-    color: #11acd3;
+    color: navy;
     font-size: 16px;
+}
+
+.contenido-index #carrusel-servicios #contenido-carrusel a:hover{
+    text-decoration: underline;
+    color: #11acd3;
+    transition: all 0.3s ease-in-out;
 }
 .contenido-index #carrusel-servicios #carrusel-servicios-fotos{
     display: flex;
@@ -201,6 +219,13 @@ header #atencion-al-cliente #atencion-al-cliente-i{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 
 }
+.contenido-index #carrusel-servicios #carrusel-servicios-fotos button:hover{
+    box-shadow: 0 0 20px 0 rgba(199, 181, 18, 0.849);
+    background-color: #11acd3;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .contenido-index #con-quien-hemos-trabajado{
     display: flex;
@@ -239,8 +264,13 @@ header #atencion-al-cliente #atencion-al-cliente-i{
 
 .contenido-index #con-quien-hemos-trabajado #contenido-con-quien-hemos-trabajado a{
     text-decoration: none;
-    color: #11acd3;
+    color: navy;
     font-size: 16px;
+}
+
+.contenido-index #con-quien-hemos-trabajado #contenido-con-quien-hemos-trabajado a:hover{
+    color: #11acd3;
+    transition: all 0.3s ease-in-out;
 }
 
 .contenido-index #con-quien-hemos-trabajado #carrusel-trabajo{
@@ -268,6 +298,13 @@ header #atencion-al-cliente #atencion-al-cliente-i{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
 
+.contenido-index #con-quien-hemos-trabajado #carrusel-trabajo button:hover{
+    box-shadow: 0 0 20px 0 rgba(199, 181, 18, 0.849);
+    background-color: #11acd3;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
 .contenido-index #trabajar-con-nosotros{
     display: flex;
     flex-direction: column;
@@ -293,8 +330,13 @@ header #atencion-al-cliente #atencion-al-cliente-i{
 
 .contenido-index #trabajar-con-nosotros a{
     text-decoration: none;
-    color: #11acd3;
+    color: navy;
     font-size: 16px;
+}
+
+.contenido-index #trabajar-con-nosotros a:hover{
+    color: #11acd3;
+    transition: all 0.3s ease-in-out;
 }
 
 .contenido-index #opiniones{
@@ -438,15 +480,26 @@ footer img{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
 
+footer img:hover{
+    box-shadow: 0 0 10px 0 rgba(54, 18, 199, 0.849);
+    transition: 0.3s ease-in-out;
+}
+
 footer h2{
     font-size: 20px;
-    color: #8A2BE2;
+    color: #800080;
 }
+
 
 footer a{
     text-decoration: none;
-    color: #800080;
+    color: navy;
     font-size: 20px;
+}
+
+footer a:hover{
+    color: #11acd3;
+    transition: 0.3s ease-in-out;
 }
 
 
