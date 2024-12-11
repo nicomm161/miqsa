@@ -22,8 +22,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
     padding: 20px;
     top: 0;
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
@@ -36,14 +35,26 @@ header img{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
 
+header img:hover{
+    box-shadow: 0 0 10px 0 rgba(54, 18, 199, 0.849);
+    transition: 0.3s ease-in-out;
+}
+
 header h2{
     font-size: 20px;
+    color: #800080;
 }
+
 
 header a{
     text-decoration: none;
-    color: #800080;
+    color: navy;
     font-size: 20px;
+}
+
+header a:hover{
+    color: #11acd3;
+    transition: 0.3s ease-in-out;
 }
 
 header #navegacion-index{
@@ -77,6 +88,7 @@ header #atencion-al-cliente #atencion-al-cliente-i{
     align-items: center;
     gap: 10px;
 }
+
 
 
 form {
@@ -172,12 +184,13 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
     padding: 20px;
     bottom: 0;
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
+
+
 
 footer img{
     width: 45px;
@@ -186,15 +199,26 @@ footer img{
     box-shadow: 0 0 10px 0 rgba(199, 181, 18, 0.849);
 }
 
+footer img:hover{
+    box-shadow: 0 0 10px 0 rgba(54, 18, 199, 0.849);
+    transition: 0.3s ease-in-out;
+}
+
 footer h2{
     font-size: 20px;
-    color: #8A2BE2;
+    color: #800080;
 }
+
 
 footer a{
     text-decoration: none;
-    color: #800080;
+    color: navy;
     font-size: 20px;
+}
+
+footer a:hover{
+    color: #11acd3;
+    transition: 0.3s ease-in-out;
 }
 
 
